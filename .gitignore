@@ -1,0 +1,26 @@
+# Qt Creator 文件
+*.pro.user
+*.pro.user.* 
+*.qmake.stash
+
+# 构建输出文件
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# 临时文件
+*.log
+*.tmp
+*.user
+*.moc
+*.qrc
+*.rcc
+
+# Mac/Linux 系统文件
+.DS_Store
+*.swp
