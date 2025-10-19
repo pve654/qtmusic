@@ -34,9 +34,9 @@ MainWindow::MainWindow(QWidget *parent)
     setFixedSize(960,600);
     setBackGround(":/images/bg.png");
 
-    /*初始化按钮*/
-    initbtn();
-    loadappointmusicdir("E:\\music");
+
+    initbtn();                                 // 初始化按钮样式
+    loadappointmusicdir("E:\\music");          // 加载播放列表
 
 
     m_player = new QMediaPlayer(this);
