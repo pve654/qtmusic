@@ -39,6 +39,8 @@ public:
     QSpacerItem *verticalSpacer_3;
     QHBoxLayout *horizontalLayout_2;
     QLabel *nowtimelbl;
+    QSpacerItem *horizontalSpacer_2;
+    QLabel *currentMusicLbl;
     QSpacerItem *horizontalSpacer;
     QLabel *totaltimelbl;
     QWidget *widget_4;
@@ -62,7 +64,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         mclist = new QListWidget(centralwidget);
         mclist->setObjectName("mclist");
-        mclist->setGeometry(QRect(700, 40, 221, 421));
+        mclist->setGeometry(QRect(700, 10, 221, 511));
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
         verticalLayoutWidget->setGeometry(QRect(10, 370, 681, 151));
@@ -93,6 +95,15 @@ public:
         nowtimelbl->setObjectName("nowtimelbl");
 
         horizontalLayout_2->addWidget(nowtimelbl);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_2);
+
+        currentMusicLbl = new QLabel(widget_2);
+        currentMusicLbl->setObjectName("currentMusicLbl");
+
+        horizontalLayout_2->addWidget(currentMusicLbl);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -168,6 +179,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         nowtimelbl->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
+        currentMusicLbl->setText(QCoreApplication::translate("MainWindow", "\346\234\252\346\222\255\346\224\276", nullptr));
         totaltimelbl->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
         prebtn->setText(QString());
         stopandbfbtn->setText(QString());

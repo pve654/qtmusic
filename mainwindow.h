@@ -22,11 +22,12 @@ public:
     void loadappointmusicdir(const QString &filename); // 加载指定文件夹音乐
 
 public slots:
-    void handlestopandbf();        // 播放/暂停
-    void handleprev();             // 上一首
-    void handlenext();             // 下一首
-    void handlemodou();            // 播放模式
-    void handleshowmusiclist();    // 显示/隐藏音乐列表
+    void handlestopandbf();           // 播放/暂停
+    void handleprev();                // 上一首
+    void handlenext();                // 下一首
+    void handlemodou();               // 播放模式
+    void handleshowmusiclist();       // 显示/隐藏音乐列表
+    void updateCurrentMusicLabel();   // 显示当前播放歌曲名
 
 private:
     void setBackGround(const QString &filename);

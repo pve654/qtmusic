@@ -111,6 +111,7 @@ debug/qrc_res.cpp: ../../res.qrc \
 		../../icon/music.png \
 		../../icon/stop.png \
 		../../icon/danqu.png \
+		../../icon/xiala.png \
 		../../icon/logo.png \
 		../../icon/nxt.png \
 		../../icon/pre.png
@@ -326,7 +327,7 @@ debug/moc_mainwindow.cpp: ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qlocale.h \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/Qstring \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QString \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QPushButton \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -567,7 +568,7 @@ debug/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qlocale.h \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/Qstring \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QString \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QPushButton \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -785,7 +786,7 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qlocale.h \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qtabwidget.h \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/Qstring \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QString \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QPushButton \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -807,12 +808,16 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlayout.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.10.0/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.10.0/mingw_64/include/QtGui/qtextdocument.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QListWidget \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlistview.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemview.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qabstractitemmodel.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qitemselectionmodel.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -828,14 +833,14 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QMenuBar \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmenubar.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmenu.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QSlider \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QSpacerItem \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QStatusBar \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qstatusbar.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QWidget \
-		D:/Qt/6.10.0/mingw_64/include/QtGui/QIcon \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/QDebug \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/QPixmap \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/QPalette \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/QUrl \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/QDir \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qdir.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qdirlisting.h \
@@ -845,14 +850,15 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qfile.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qfileinfo.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/qtimezone.h \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/QFile \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/QFileInfo \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialog.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		D:/Qt/6.10.0/mingw_64/include/QtCore/QRandomGenerator \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/qrandom.h
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qrandom.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QTime \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 
