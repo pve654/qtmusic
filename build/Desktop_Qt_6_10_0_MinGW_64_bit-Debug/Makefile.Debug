@@ -110,6 +110,7 @@ debug/qrc_res.cpp: ../../res.qrc \
 		../../icon/random.png \
 		../../icon/music.png \
 		../../icon/stop.png \
+		../../icon/danqu.png \
 		../../icon/logo.png \
 		../../icon/nxt.png \
 		../../icon/pre.png
@@ -806,6 +807,24 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlayout.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QListWidget \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlistwidget.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qlistview.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qt/6.10.0/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qrubberband.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QMenuBar \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmenubar.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmenu.h \
@@ -813,9 +832,27 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QWidget \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/QIcon \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QDebug \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/QPixmap \
 		D:/Qt/6.10.0/mingw_64/include/QtGui/QPalette \
-		D:/Qt/6.10.0/mingw_64/include/QtCore/QUrl
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QUrl \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QDir \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qdir.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qdirlisting.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qfiledevice.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qfile.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qfileinfo.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qtimezone.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QFile \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QFileInfo \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/QMessageBox \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qt/6.10.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/QRandomGenerator \
+		D:/Qt/6.10.0/mingw_64/include/QtCore/qrandom.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 

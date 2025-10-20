@@ -12,11 +12,15 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,6 +29,19 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QListWidget *mclist;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_2;
+    QSpacerItem *verticalSpacer;
+    QWidget *widget_2;
+    QVBoxLayout *verticalLayout;
+    QSlider *progressSlider;
+    QSpacerItem *verticalSpacer_3;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *nowtimelbl;
+    QSpacerItem *horizontalSpacer;
+    QLabel *totaltimelbl;
+    QWidget *widget_4;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QPushButton *prebtn;
@@ -32,7 +49,7 @@ public:
     QPushButton *netbtn;
     QPushButton *moshibtn;
     QPushButton *musiclistbtn;
-    QListWidget *mclist;
+    QSpacerItem *verticalSpacer_4;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,9 +60,59 @@ public:
         MainWindow->resize(959, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        widget = new QWidget(centralwidget);
+        mclist = new QListWidget(centralwidget);
+        mclist->setObjectName("mclist");
+        mclist->setGeometry(QRect(700, 40, 221, 421));
+        verticalLayoutWidget = new QWidget(centralwidget);
+        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
+        verticalLayoutWidget->setGeometry(QRect(10, 370, 681, 151));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer);
+
+        widget_2 = new QWidget(verticalLayoutWidget);
+        widget_2->setObjectName("widget_2");
+        verticalLayout = new QVBoxLayout(widget_2);
+        verticalLayout->setObjectName("verticalLayout");
+        progressSlider = new QSlider(widget_2);
+        progressSlider->setObjectName("progressSlider");
+        progressSlider->setOrientation(Qt::Orientation::Horizontal);
+
+        verticalLayout->addWidget(progressSlider);
+
+        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_3);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        nowtimelbl = new QLabel(widget_2);
+        nowtimelbl->setObjectName("nowtimelbl");
+
+        horizontalLayout_2->addWidget(nowtimelbl);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+        totaltimelbl = new QLabel(widget_2);
+        totaltimelbl->setObjectName("totaltimelbl");
+
+        horizontalLayout_2->addWidget(totaltimelbl);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+        widget_4 = new QWidget(widget_2);
+        widget_4->setObjectName("widget_4");
+
+        verticalLayout->addWidget(widget_4);
+
+        widget = new QWidget(widget_2);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(30, 470, 631, 71));
         horizontalLayout = new QHBoxLayout(widget);
         horizontalLayout->setObjectName("horizontalLayout");
         prebtn = new QPushButton(widget);
@@ -73,9 +140,16 @@ public:
 
         horizontalLayout->addWidget(musiclistbtn);
 
-        mclist = new QListWidget(centralwidget);
-        mclist->setObjectName("mclist");
-        mclist->setGeometry(QRect(670, 30, 221, 421));
+
+        verticalLayout->addWidget(widget);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_4);
+
+
+        verticalLayout_2->addWidget(widget_2);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -93,6 +167,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        nowtimelbl->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
+        totaltimelbl->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
         prebtn->setText(QString());
         stopandbfbtn->setText(QString());
         netbtn->setText(QString());
