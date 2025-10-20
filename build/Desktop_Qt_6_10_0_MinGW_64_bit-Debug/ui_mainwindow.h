@@ -52,6 +52,8 @@ public:
     QPushButton *moshibtn;
     QPushButton *musiclistbtn;
     QSpacerItem *verticalSpacer_4;
+    QWidget *lyricWidget;
+    QLabel *lyricLabel;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -161,6 +163,12 @@ public:
 
         verticalLayout_2->addWidget(widget_2);
 
+        lyricWidget = new QWidget(centralwidget);
+        lyricWidget->setObjectName("lyricWidget");
+        lyricWidget->setGeometry(QRect(10, 10, 681, 341));
+        lyricLabel = new QLabel(lyricWidget);
+        lyricLabel->setObjectName("lyricLabel");
+        lyricLabel->setGeometry(QRect(220, 150, 211, 21));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -186,6 +194,7 @@ public:
         netbtn->setText(QString());
         moshibtn->setText(QString());
         musiclistbtn->setText(QString());
+        lyricLabel->setText(QCoreApplication::translate("MainWindow", "\346\255\214\350\257\215", nullptr));
     } // retranslateUi
 
 };
